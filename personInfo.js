@@ -35,9 +35,7 @@ function requestPersonInfo(url,nameP){
 
  function startApp(personName){
      requestPersonInfo(urlStarWar,personName)
-             setTimeout(function(){
             container.innerHTML =createCard()
-         },200)
          
      }
      searchButton.addEventListener('click',event =>{
