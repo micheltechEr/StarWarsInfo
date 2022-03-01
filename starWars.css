@@ -80,6 +80,7 @@ body {
 
 .container_2 {
     float: right;
+    margin-bottom: -30px;
 }
 
 .code_person {
@@ -131,6 +132,9 @@ input.search-input {
     }
     .info {
         max-height: fit-content;
+    }
+    .container_1 {
+        bottom: 170px;
     }
     .container_2 {
         width: 80%;
