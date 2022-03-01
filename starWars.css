@@ -114,9 +114,12 @@ input.search-input {
 
 @media (max-width: 768px) {
     body {
-        background-image: url("bannwap.jpg");
-        background-repeat: repeat;
-    }
+    background-image: url("bannwap.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
     input {
         margin-left: 0px;
     }
