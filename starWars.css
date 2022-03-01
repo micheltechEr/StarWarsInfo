@@ -1,58 +1,136 @@
-
-.container{
-    padding:250px  790px;
-}
- .master{
-     background-image: url('cuties.jpg');
-     height:900px;
-     margin: -120px -250px;
- }
-
- .info{
-     font-size: 12px;
-     border-radius: 20px;
-     color:#fff;
-     background-color:#000;
-     margin:10px 8px;
-     height: 100px;
-     width:520px;
-     font-family:DIN, Helvetica, Arial, sans-serif;
-     text-align: center;
- }
-
-input{
-    margin-left: 150px;
-    width:220px;
-    height: 40px;
-    border-radius:12px;
+:root {
+    --cor_botao: #228b22;
+    --cor_letra_botao: #fff;
+    --cor_borda: #000;
+    --cor_letra_input: #f7ae10;
+    --cor_borda_input: #eda912;
 }
 
-button{
-    color: white;
-    background: black;
-     border: 1px black solid;
-    margin:10px 0px 0px 230px;
-
-    cursor: pointer;
-    border-radius:30px;
-    height:25px;
-    width:60px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+span,
+input,
+a {
+    font-family: Jura;
+}
 
+body {
+    background-image: url("bannwap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+}
 
-@media(max-width:600px){
-    input{
-        margin-left: -420px;
+.flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-itens {
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.botom-60 {
+    bottom: 60%;
+}
+
+.boldClass {
+    font-weight: bold;
+}
+
+::placeholder {
+    color: rgb(251, 172, 10);
+}
+
+.container {
+    padding: 250px 790px;
+}
+
+.info {
+    font-size: 12px;
+    color: rgb(251, 172, 10);
+    background-color: transparent;
+    height: max-content;
+    width: max-content;
+    max-width: 501px;
+    max-height: fit-content;
+    padding-top: 10px !important;
+}
+
+.container_1 {
+    flex-wrap: wrap;
+    bottom: 78%;
+}
+
+.container_2 {
+    float: right;
+}
+
+.code_person {
+    background: #ffb015;
+    height: 30px;
+}
+
+.code_person span {
+    width: 173px;
+    font-size: 17px;
+}
+
+input.search-input {
+    color: var(--cor_letra_input);
+    width: 220px;
+    height: 30px;
+    border-radius: 2%;
+    background: transparent;
+    text-align: center;
+    border: 1px solid var(--cor_borda_input);
+}
+
+.search-button {
+    height: 30px;
+    width: 100px;
+    margin-left: 16px;
+    text-decoration: none;
+    background: var(--cor_botao);
+    color: var(--cor_letra_botao);
+    border-radius: 4%;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url("bannwap.jpg");
+        background-repeat: repeat;
     }
-    button{
-       margin:10px 0px 0px -2px ;
+    input {
+        margin-left: 0px;
     }
-    .master{
-        background-position:top
+    button {
+        margin: 10px 0px 0px -2px;
     }
-    .info{
-        margin:10px -420px;
-        width: 250px;
+    .master {
+        background-position: top;
+    }
+    .info {
+        max-height: fit-content;
+    }
+    .container_2 {
+        width: 90%;
+        margin-top: 40%;
     }
 }
