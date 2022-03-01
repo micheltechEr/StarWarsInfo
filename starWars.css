@@ -1,23 +1,28 @@
-:root{
-    --cor_botao: #228B22;
-    --cor_letra_botao:#FFF;
-    --cor_borda : #000;
+:root {
+    --cor_botao: #228b22;
+    --cor_letra_botao: #fff;
+    --cor_borda: #000;
     --cor_letra_input: #f7ae10;
     --cor_borda_input: #eda912;
 }
 
-
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
-h1,h2,h3,h4,span,input,a{
+h1,
+h2,
+h3,
+h4,
+span,
+input,
+a {
     font-family: Jura;
 }
 
 body {
-    background-image: url('bannwap.jpg');
+    background-image: url("bannwap.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -25,36 +30,36 @@ body {
     height: 100%;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.justify-content{
+.justify-content {
     justify-content: center;
 }
 
-.align-itens{
+.align-itens {
     align-items: center;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.botom-60{
+.botom-60 {
     bottom: 60%;
 }
 
-.boldClass{
+.boldClass {
     font-weight: bold;
 }
 
-::placeholder{
+::placeholder {
     color: rgb(251, 172, 10);
 }
 
-.container{
-    padding:250px  790px;
+.container {
+    padding: 250px 790px;
 }
 
 .info {
@@ -65,16 +70,15 @@ body {
     width: max-content;
     max-width: 501px;
     max-height: fit-content;
-    padding-top: 10px  !important;
-
+    padding-top: 10px !important;
 }
 
-.container_1{
-        flex-wrap: wrap;  
-        bottom: 78%;
+.container_1 {
+    flex-wrap: wrap;
+    bottom: 78%;
 }
 
- .container_2 {
+.container_2 {
     float: right;
 }
 
@@ -86,7 +90,6 @@ body {
 .code_person span {
     width: 173px;
     font-size: 17px;
-
 }
 
 input.search-input {
@@ -104,37 +107,33 @@ input.search-input {
     width: 100px;
     margin-left: 16px;
     text-decoration: none;
-    background:var(--cor_botao);
+    background: var(--cor_botao);
     color: var(--cor_letra_botao);
     border-radius: 4%;
 }
 
-
-@media(max-width:768px){
+@media (max-width: 768px) {
     body {
-        background-image: url('bannwap.jpg');
-        background-repeat: repeat;
-    }
-    input{
+    background-image: url("bannwap.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+    input {
         margin-left: 0px;
     }
-    button{
-       margin:10px 0px 0px -2px ;
+    button {
+        margin: 10px 0px 0px -2px;
     }
-    .master{
-        background-position:top
+    .master {
+        background-position: top;
     }
     .info {
         max-height: fit-content;
-
     }
-    
-    .container_1 {
-    bottom: 0px;
-}
-    .container_2{
+    .container_2 {
         width: 80%;
-        bottom:0px;
+        bottom: 0px;
     }
 }
-
