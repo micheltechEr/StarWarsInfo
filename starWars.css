@@ -128,6 +128,10 @@ input.search-input {
         max-height: fit-content;
 
     }
+    
+    .container_1 {
+    bottom: 0px;
+}
     .container_2{
         width: 80%;
         margin-top: 40%;
